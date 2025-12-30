@@ -1,12 +1,7 @@
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+//import CounterOptions from './examples/CounterOptions.vue'
+import CounterCompositions from './examples/CounterCompositions.vue'
 
-import App from './App.vue'
-import router from './router'
-
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
+const app = createApp(CounterCompositions)
 
 app.mount('#app')
